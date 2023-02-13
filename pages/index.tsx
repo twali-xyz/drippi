@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { Inter } from "@next/font/google";
-import { Flex } from "@chakra-ui/react";
 import Layout from "@/components/layout";
+import { SectionA } from "@/components/landing/sectionA";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,13 +15,7 @@ export default function Home() {
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
       <Layout>
-        <Flex
-          width={"100%"}
-          height={"100vh"}
-          justify={"center"}
-          alignItems={"center"}
-          bg={"secondary"}
-        ></Flex>
+        <SectionA />
       </Layout>
     </>
   );
