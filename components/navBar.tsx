@@ -50,6 +50,7 @@ export default function NavBar() {
         bg={"secondary"}
         pt={1}
         pos={"fixed"}
+        zIndex={1000}
         top={"0"}
         width={"100%"}
         data-testid="navbar"

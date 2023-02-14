@@ -20,8 +20,9 @@ export const theme = extendTheme({
     sm: "1rem",
     md: "1.6rem",
     lg: "2.4rem",
-    xl: "3.2rem",
-    "2xl": "4.8rem",
+    xl: "2.75rem",
+    xxl: "3.2rem",
+    xxxl: "4.8rem",
   },
   fonts: {},
   borderRadius: {
