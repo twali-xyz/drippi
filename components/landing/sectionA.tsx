@@ -10,58 +10,71 @@ export function SectionA({}) {
       justify={"center"}
       alignItems={"center"}
       bg={"secondary"}
-      py={16}
+      py={6}
+      flexDir={{ base: "column", md: "row" }}
     >
-      <VStack maxW={"50%"}>
+      <VStack maxW={{ base: "100%", md: "50%" }}>
         <Text
           color={"primary"}
           fontSize={"10vmin"}
-          maxW={"42vw"}
-          mt={0}
+          maxW={{ base: "100%", md: "42vw" }}
+          pt={24}
           textAlign={"center"}
           lineHeight={"10vmin"}
         >
           LIVE OUTSIDE THE BOUNDS, GET PAID WITHIN THEM
         </Text>
-        <Text color={"primary"}>Unleash your future</Text>
+        <Text color={"primary"} fontSize={"md"} py={14}>
+          Unleash your future
+        </Text>
 
         <Button
           background={"primary"}
           color={"black"}
           rounded={"full"}
           fontWeight={"400"}
-          fontSize={"xs"}
-          letterSpacing={"0.12rem"}
+          fontSize={"sm"}
+          letterSpacing={"0.18rem"}
           _hover={{
             textDecoration: "none",
           }}
-          width={"190px"}
+          height={"70px"}
+          width={"280px"}
           css={{
             wordSpacing: "0.2rem",
           }}
           display={{
-            sm: "none",
             md: "inline-flex",
           }}
           alignItems={"center"}
           justifyContent={"center"}
           mr={2}
+          zIndex={1}
           data-testid="join-the-waitlist-button"
         >
           Join the waitlist
         </Button>
-        <Text color={"primary"}>Welcome to the Drip Club.</Text>
-        <Text color={"primary"}>
-          drippi accepts payments from all your favorite platforms and drops
-          them into your account on your preferred payday, in a way your bank
-          can understand.
-        </Text>
-        <Text color={"primary"}>
-          You control the frequency and amount of each payday, leave the rest to
-          us.{" "}
-        </Text>
+        <Flex flexDir={"column"} px={8}>
+          <Text
+            css={{ wordSpacing: "0.2rem" }}
+            color={"primary"}
+            fontSize={"xl"}
+            pt={8}
+          >
+            Welcome to the Drip Club.
+          </Text>
+          <Text color={"primary"} fontSize={"md"} py={4}>
+            drippi accepts payments from all your favorite platforms and drops
+            them into your account on your preferred payday, in a way your bank
+            can understand.
+          </Text>
+          <Text color={"primary"} fontSize={"md"}>
+            You control the frequency and amount of each payday, leave the rest
+            to us.{" "}
+          </Text>
+        </Flex>
       </VStack>
-      <Box px={"40px"} mt={6}>
+      <Box px={"40px"} mt={{ base: 4, md: -10 }}>
         <Image
           src="https://via.placeholder.com/750"
           alt="Picture of the author"
