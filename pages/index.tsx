@@ -12,6 +12,7 @@ export default function Home() {
         <title>Template</title>
         <meta name="description" content="Descripe the app" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://use.typekit.net/zdj4rip.css" />
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
       <Layout>

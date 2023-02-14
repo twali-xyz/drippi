@@ -46,6 +46,7 @@ export default function NavBar() {
   return (
     <>
       <Box
+        fontFamily={"normal"}
         px={6}
         bg={"secondary"}
         pt={1}
@@ -90,6 +91,7 @@ export default function NavBar() {
               spacing={4}
               display={{ base: "none", md: "flex" }}
               color={"primary"}
+              fontFamily={"normal"}
               data-testid="links"
             >
               {Links.map((link) => (
@@ -106,6 +108,7 @@ export default function NavBar() {
           <Text
             data-testid="brand-name"
             p={"0"}
+            fontWeight={"500"}
             alignSelf={"center"}
             color={"primary"}
             fontSize={"md"}
@@ -128,18 +131,19 @@ export default function NavBar() {
               color={"black"}
               rounded={"full"}
               fontWeight={"400"}
-              fontSize={"xs"}
-              letterSpacing={"0.12rem"}
+              fontSize={"calc((.8 - 1) * 1.2vw + 1rem);"}
+              letterSpacing={".05em"}
+              p={"0.9em 1.503em"}
               _hover={{
                 textDecoration: "none",
               }}
-              width={"190px"}
-              css={{ wordSpacing: "0.2rem" }}
+              width={"195px"}
               display={{ sm: "none", md: "inline-flex" }}
               alignItems={"center"}
               justifyContent={"center"}
               mr={2}
               data-testid="join-the-waitlist-button"
+              fontFamily={"light"}
             >
               Join the waitlist
             </Button>

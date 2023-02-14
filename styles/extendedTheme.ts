@@ -24,7 +24,10 @@ export const theme = extendTheme({
     xxl: "3.2rem",
     xxxl: "4.8rem",
   },
-  fonts: {},
+  fonts: {
+    normal: "new-spirit",
+    light: "array-mono",
+  },
   borderRadius: {
     xs: "0.8rem",
     sm: "2.75rem",
