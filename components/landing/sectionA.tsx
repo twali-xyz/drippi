@@ -1,8 +1,11 @@
 import { Box, Button, Flex, Text, VStack } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
 export function SectionA({}) {
+  const MotionBox = motion(Box);
+  const MotionVStack = motion(VStack);
   return (
     <Flex
       width={"100%"}
@@ -14,7 +17,16 @@ export function SectionA({}) {
       flexDir={{ base: "column", md: "row" }}
       px={{ base: "16px", md: "0px" }}
     >
-      <VStack maxW={{ base: "100%", md: "50%" }} p={0} m={0} mr={4} mb={12}>
+      <MotionVStack
+        maxW={{ base: "100%", md: "50%" }}
+        p={0}
+        m={0}
+        mr={4}
+        mb={12}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
         <Box>
           <Text
             fontWeight={"500"}
@@ -23,10 +35,10 @@ export function SectionA({}) {
               base: "calc((4.5 - 1) * calc(.012 * min(100vh, 900px)) + 1rem)",
               md: "calc((4.5 - 1) * 1.2vw + 1rem)",
             }}
-            pt={{ base: 28, md: "calc(1.2 * (1 + (1 - 4.5)/25))" }}
+            pt={{ base: 28 }}
             px={{ base: 0, md: 0 }}
             mr={{ base: 0, md: 6 }}
-            mb={{ base: 0, md: 6 }}
+            mb={{ base: 0, md: 12 }}
             textAlign={"center"}
             letterSpacing={"0em"}
             whiteSpace={"pre-wrap"}
@@ -42,7 +54,6 @@ export function SectionA({}) {
         <Text color={"primary"} fontSize={"md"} py={8}>
           Unleash your future
         </Text>
-
         <Flex
           width={"100%"}
           height={"100%"}
@@ -126,16 +137,20 @@ export function SectionA({}) {
             </Text>
           </Flex>
         </Flex>
-      </VStack>
-      <Box
+      </MotionVStack>
+      <MotionBox
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
         px={"0px"}
         mr={"calc(2vw * .85)"}
         mt={{ base: 4, md: "calc(5vw * .85)" }}
         width={"100%"}
         maxW={"671px"}
-        height={{ base: "425px", md: "calc(65vw)" }}
+        height={{ base: "650px", md: "calc(65vw)" }}
+        maxH={{ base: "calc(max(550px, 65vw))" }}
         position={"relative"}
-        // add a clip path to make the top of the image rounded(try again)
+        mb={10}
       >
         <svg
           data-image-mask-id="round-top"
@@ -158,7 +173,7 @@ export function SectionA({}) {
           objectFit={"cover"}
           objectPosition={"calc(50%) calc(50%)"}
         />
-      </Box>
+      </MotionBox>
     </Flex>
   );
 }
