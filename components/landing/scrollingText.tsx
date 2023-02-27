@@ -1,19 +1,24 @@
-import { motion, useMotionValue, useTransform } from "framer-motion";
-import { Flex, HStack, Text } from "@chakra-ui/react";
+import { motion } from "framer-motion";
+import { Flex, Text } from "@chakra-ui/react";
+
+interface ScrollingTextProps {
+  text: string;
+  color?: string;
+  fontSize?: string;
+}
 
 const ScrollingText = ({
   text,
-  frequency = 10,
-  amplitude = 10,
   color = "primary",
   fontSize = "calc((1.5 - 1) * 1.2vw + 1rem) !important",
-}: any) => {
+}: ScrollingTextProps) => {
   const MotionText = motion(Text);
 
   return (
     <Flex pos={"relative"} height={"100px"}>
       <MotionText
         fontSize={fontSize}
+        color={color || "primary"}
         whiteSpace={"nowrap"}
         fontWeight={"500"}
         mr={4}

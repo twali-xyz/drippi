@@ -74,7 +74,6 @@ const Footer = () => {
             variant={"link"}
             color={"black"}
             textDecor={"underline"}
-            mt={"0.5rem"}
             fontWeight={"300"}
           >
             How it works

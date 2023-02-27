@@ -84,7 +84,7 @@ export default function Home() {
               fontWeight={"500"}
               color={"primary"}
               pos={"relative"}
-              right={80}
+              right={-700}
               bottom={8}
               pt={8}
             >
