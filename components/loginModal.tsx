@@ -31,7 +31,7 @@ const LoginModal: React.FC<LoginModalProps> = ({
 }): JSX.Element => {
   const [email, setEmail] = useState<string>();
   const [password, setPassword] = useState<string>();
-  const { data: session } = useSession();
+
   const handleLogin = () => {
     console.log("Login");
   };
