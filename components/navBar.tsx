@@ -106,13 +106,17 @@ export default function NavBar() {
             </HStack>
           </HStack>
           <Text
+            cursor={"pointer"}
             data-testid="brand-name"
             p={"0"}
             fontWeight={"500"}
             alignSelf={"center"}
             color={"primary"}
             fontSize={"md"}
-            mr={{ base: 16, md: 8 }}
+            mr={24}
+            onClick={() => {
+              window.location.href = "/";
+            }}
           >
             drippi
           </Text>
@@ -144,6 +148,9 @@ export default function NavBar() {
               mr={2}
               data-testid="join-the-waitlist-button"
               fontFamily={"light"}
+              onClick={() => {
+                window.location.href = "/waitlist";
+              }}
             >
               Join the waitlist
             </Button>
