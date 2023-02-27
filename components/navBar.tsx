@@ -8,12 +8,12 @@ import {
   MenuButton,
   MenuList,
   MenuItem,
+  Link,
   useDisclosure,
   Stack,
   Text,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-import Link from "next/link";
 
 const Links = ["Join the waitlist", "Product", "Team"];
 
@@ -97,7 +97,7 @@ export default function NavBar() {
               {Links.map((link) => (
                 <NavLink
                   key={link}
-                  href={link}
+                  href={link === "Join the waitlist" ? "waitlist" : link}
                   data-testid={`${link.toLocaleLowerCase()}-nav`}
                 >
                   {link}

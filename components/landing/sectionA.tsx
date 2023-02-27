@@ -2,6 +2,7 @@ import { Box, Button, Flex, Text, VStack } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
+import ScrollingText from "./scrollingText";
 
 export function SectionA({}) {
   const MotionBox = motion(Box);
@@ -35,7 +36,7 @@ export function SectionA({}) {
               base: "calc((4.5 - 1) * calc(.012 * min(100vh, 900px)) + 1rem)",
               md: "calc((4.5 - 1) * 1.2vw + 1rem)",
             }}
-            pt={{ base: 28 }}
+            pt={{ base: 8 }}
             px={{ base: 0, md: 0 }}
             mr={{ base: 0, md: 6 }}
             mb={{ base: 0, md: 12 }}
@@ -51,9 +52,7 @@ export function SectionA({}) {
             LIVE OUTSIDE THE BOUNDS, GET PAID WITHIN THEM
           </Text>
         </Box>
-        <Text color={"primary"} fontSize={"md"} py={8}>
-          Unleash your future
-        </Text>
+        <ScrollingText text="Unleash your future 〰️ Unleash your future 〰️ Unleash your future 〰️ Unleash your future 〰️ Unleash your future 〰️ Unleash your future 〰️ Unleash your future 〰️ Unleash your future 〰️ " />
         <Flex
           width={"100%"}
           height={"100%"}
