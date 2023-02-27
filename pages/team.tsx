@@ -17,6 +17,7 @@ export default function Team() {
           color={"primary"}
           fontSize={"calc((4.5 - 1) * 1.2vw + 1rem)"}
           fontWeight={"500"}
+          textAlign={"center"}
         >
           By creators, for creators
         </Text>
@@ -26,10 +27,11 @@ export default function Team() {
           fontWeight={"500"}
           pt={20}
           pb={16}
+          textAlign={"center"}
         >
           Meet the Drip Club.
         </Text>
-        <SimpleGrid minChildWidth={"12rem"} spacing={6} w={"100%"}>
+        <SimpleGrid minChildWidth={"12rem"} spacing={6} px={8} w={"100%"}>
           <VStack px={4}>
             <Box borderRadius={"full"} overflow={"hidden"}>
               <Avatar
