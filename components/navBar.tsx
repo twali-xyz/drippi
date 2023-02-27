@@ -222,6 +222,9 @@ export default function NavBar() {
               height="62px"
               width={"302px"}
               data-testid="join-the-waitlist-button"
+              onClick={() => {
+                window.location.href = "/waitlist";
+              }}
             >
               Join the waitlist
             </Button>

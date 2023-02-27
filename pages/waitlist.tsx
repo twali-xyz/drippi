@@ -25,6 +25,7 @@ const Waitlist = () => {
         alignItems={"center"}
         bg={"secondary"}
         py={12}
+        pt={{ base: 32, md: 12 }}
         flexDir={{ base: "column", md: "row-reverse" }}
         px={{ base: "16px", md: "30px" }}
       >
