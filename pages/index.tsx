@@ -20,6 +20,7 @@ export default function Home() {
           height={"100vh"}
           justify={"center"}
           alignItems={"center"}
+          bg={"secondary"}
         ></Flex>
       </Layout>
     </>
