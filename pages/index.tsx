@@ -44,6 +44,7 @@ export default function Home() {
           alignItems={"center"}
           bg={"secondary"}
           py={6}
+          mt={{ base: 16, md: 8 }}
           flexDir={{ base: "column", md: "row" }}
           px={{ base: "16px", md: "0px" }}
         >
@@ -121,7 +122,7 @@ export default function Home() {
                     initial={{ startOffset: 291 }}
                     animate={{ startOffset: 0 }}
                     transition={{
-                      duration: 2,
+                      duration: 4,
                       repeat: Infinity,
                       ease: "linear",
                     }}
@@ -273,6 +274,9 @@ export default function Home() {
                 p={".9em 1.503em"}
                 fontFamily={"light"}
                 data-testid="join-the-waitlist-button"
+                onClick={() => {
+                  window.location.href = window.location.origin + "/waitlist";
+                }}
               >
                 Join the waitlist
               </Button>
@@ -497,6 +501,7 @@ export default function Home() {
           alignItems={"center"}
           bg={"primary"}
           py={6}
+          color={"black"}
         >
           <Flex
             width={"100%"}
@@ -737,6 +742,7 @@ export default function Home() {
               data-testid="join-the-waitlist-button"
               alignSelf={{ base: "flex-start", md: "flex-start" }}
               justifySelf={"flex-end"}
+              color={"black"}
             >
               Sign Up
             </Button>
@@ -785,6 +791,9 @@ export default function Home() {
             mt={{ base: "unset", md: "106.5px !important" }}
             bg={"black"}
             color={"primary"}
+            _hover={{
+              textDecoration: "none",
+            }}
             py={6}
             px={16}
             fontWeight={"400"}

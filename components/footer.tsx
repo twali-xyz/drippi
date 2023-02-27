@@ -7,6 +7,7 @@ const Footer = () => {
       as={"footer"}
       width={"100%"}
       background={"primary"}
+      color={"black"}
       fontFamily={"normal"}
       pt={4}
     >

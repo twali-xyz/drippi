@@ -112,7 +112,7 @@ export default function NavBar() {
             alignSelf={"center"}
             color={"primary"}
             fontSize={"md"}
-            mr={{ base: 28, md: 8 }}
+            mr={{ base: 16, md: 8 }}
           >
             drippi
           </Text>
@@ -138,7 +138,7 @@ export default function NavBar() {
                 textDecoration: "none",
               }}
               width={"195px"}
-              display={{ sm: "none", md: "inline-flex" }}
+              display={{ base: "none", md: "inline-flex" }}
               alignItems={"center"}
               justifyContent={"center"}
               mr={2}
