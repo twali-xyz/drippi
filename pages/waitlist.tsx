@@ -12,7 +12,7 @@ import {
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
-import ScrollingText from "../components/landing/scrollingText";
+
 const Waitlist = () => {
   const MotionBox = motion(Box);
   const MotionVStack = motion(VStack);
