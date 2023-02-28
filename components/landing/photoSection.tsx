@@ -12,7 +12,7 @@ const PhotoSection = () => {
       <GridItem w="150%" h="auto" bg="blue.500">
         <Image
           src={"/images/photosection_1.jpeg "}
-          alt={"demo"}
+          alt={"Creator taking photo"}
           width={"1500"}
           height={"1500"}
           style={{ objectFit: "cover" }}
@@ -27,7 +27,7 @@ const PhotoSection = () => {
       >
         <Image
           src={"/images/photosection_2.jpeg "}
-          alt={"demo"}
+          alt={"Woman holding a camera"}
           width={"1000"}
           height={"1000"}
           style={{ objectFit: "cover" }}
@@ -42,7 +42,7 @@ const PhotoSection = () => {
       >
         <Image
           src={"/images/photosection_3.jpeg "}
-          alt={"demo"}
+          alt={"Radio equipment"}
           width={"1000"}
           height={"1000"}
           style={{ objectFit: "cover" }}
@@ -57,7 +57,7 @@ const PhotoSection = () => {
       >
         <Image
           src={"/images/photosection_4.jpeg "}
-          alt={"demo"}
+          alt={"Woman modeling in front of red wall"}
           width={"1000"}
           height={"1000"}
           style={{ objectFit: "cover" }}
