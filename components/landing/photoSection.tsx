@@ -11,10 +11,10 @@ const PhotoSection = () => {
     >
       <GridItem w="150%" h="auto" bg="blue.500">
         <Image
-          src={"/images/square1.jpeg "}
+          src={"/images/photosection_1.jpeg "}
           alt={"demo"}
-          width={"7500"}
-          height={"7500"}
+          width={"1500"}
+          height={"1500"}
           style={{ objectFit: "cover" }}
         />
       </GridItem>
@@ -26,10 +26,10 @@ const PhotoSection = () => {
         bottom={"99px"}
       >
         <Image
-          src={"/images/square2.jpeg "}
+          src={"/images/photosection_2.jpeg "}
           alt={"demo"}
-          width={"750"}
-          height={"750"}
+          width={"1000"}
+          height={"1000"}
           style={{ objectFit: "cover" }}
         />
       </GridItem>
@@ -41,10 +41,10 @@ const PhotoSection = () => {
         bottom={"99px"}
       >
         <Image
-          src={"/images/square3.jpeg "}
+          src={"/images/photosection_3.jpeg "}
           alt={"demo"}
-          width={"750"}
-          height={"750"}
+          width={"1000"}
+          height={"1000"}
           style={{ objectFit: "cover" }}
         />
       </GridItem>
@@ -56,10 +56,10 @@ const PhotoSection = () => {
         bottom={"99px"}
       >
         <Image
-          src={"/images/square4.jpeg "}
+          src={"/images/photosection_4.jpeg "}
           alt={"demo"}
-          width={"750"}
-          height={"750"}
+          width={"1000"}
+          height={"1000"}
           style={{ objectFit: "cover" }}
         />
       </GridItem>

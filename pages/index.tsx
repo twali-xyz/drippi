@@ -60,6 +60,7 @@ export default function Home() {
           >
             <Box>
               <Text
+                className={"hero-text"}
                 fontWeight={"500"}
                 color={"primary"}
                 fontSize={{
@@ -77,7 +78,7 @@ export default function Home() {
                   base: "calc(1.2 * (1 + (1 - 4.5)/25))",
                   md: "calc(1.2 * (1 + (1 - 4.5)/25))",
                 }}
-                maxW={"686px"}
+                maxW={{ base: "686px", lg: "100%" }}
               >
                 LIVE OUTSIDE THE BOUNDS, GET PAID WITHIN THEM
               </Text>
@@ -339,9 +340,10 @@ export default function Home() {
             width={"100%"}
             maxW={"671px"}
             height={{ base: "650px", md: "calc(65vw)" }}
-            maxH={{ base: "calc(max(550px, 65vw))" }}
+            maxH={{ base: "calc(min(calc(max(550px, 65vw)), 1050px))" }}
             position={"relative"}
             mb={10}
+            className={"tree"}
           >
             <svg
               data-image-mask-id="round-top"
@@ -480,7 +482,7 @@ export default function Home() {
             mr={"calc(5vw * .85)"}
             mt={{ base: 4, md: "calc(5vw * .85)" }}
             width={"100%"}
-            maxW={{ base: "361px", md: "361px", lg: "441px" }}
+            maxW={{ base: "361px", md: "361px", lg: "calc(min(750px, 30vw))" }}
             height={{ base: "425px", md: "calc(42vw)" }}
             minH={{ md: "525px" }}
             position={"relative"}
@@ -669,7 +671,7 @@ export default function Home() {
                   base: "calc(1.2 * (1 + (1 - 4.5)/25))",
                   md: "calc(1.2 * (1 + (1 - 4.5)/25))",
                 }}
-                maxW={{ base: "100%", md: "600px" }}
+                maxW={{ base: "100%", md: "600px", lg: "100%" }}
               >
                 Join our waitlist
               </Text>
@@ -784,11 +786,15 @@ export default function Home() {
         <VStack width={"100%"} background={"primary"} pt={4} pb={24}>
           <ScrollingText
             color={"black"}
-            fontSize={"calc(7 * 1.2vw + 1rem) !important"}
+            fontSize={"calc(7 * 1.1vw + 1rem) !important"}
             text="unleash your future ~~ unleash your future ~~ unleash your future ~~ unleash your future ~~ unleash your future ~~ unleash your future"
           />
           <Button
-            mt={{ base: "unset", md: "106.5px !important" }}
+            mt={{
+              base: "unset",
+              md: "136.5px !important",
+              lg: "260px !important",
+            }}
             bg={"black"}
             color={"primary"}
             _hover={{
