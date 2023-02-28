@@ -8,12 +8,12 @@ import {
   MenuButton,
   MenuList,
   MenuItem,
+  Link,
   useDisclosure,
   Stack,
   Text,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-import Link from "next/link";
 
 const Links = ["Join the waitlist", "Product", "Team"];
 
@@ -46,10 +46,12 @@ export default function NavBar() {
   return (
     <>
       <Box
+        fontFamily={"normal"}
         px={6}
         bg={"secondary"}
         pt={1}
         pos={"fixed"}
+        zIndex={1000}
         top={"0"}
         width={"100%"}
         data-testid="navbar"
@@ -89,12 +91,13 @@ export default function NavBar() {
               spacing={4}
               display={{ base: "none", md: "flex" }}
               color={"primary"}
+              fontFamily={"normal"}
               data-testid="links"
             >
               {Links.map((link) => (
                 <NavLink
                   key={link}
-                  href={link}
+                  href={link === "Join the waitlist" ? "waitlist" : link}
                   data-testid={`${link.toLocaleLowerCase()}-nav`}
                 >
                   {link}
@@ -103,12 +106,17 @@ export default function NavBar() {
             </HStack>
           </HStack>
           <Text
+            cursor={"pointer"}
             data-testid="brand-name"
             p={"0"}
+            fontWeight={"500"}
             alignSelf={"center"}
             color={"primary"}
             fontSize={"md"}
-            mr={{ base: 28, md: 8 }}
+            mr={24}
+            onClick={() => {
+              window.location.href = "/";
+            }}
           >
             drippi
           </Text>
@@ -127,18 +135,22 @@ export default function NavBar() {
               color={"black"}
               rounded={"full"}
               fontWeight={"400"}
-              fontSize={"xs"}
-              letterSpacing={"0.12rem"}
+              fontSize={"calc((.8 - 1) * 1.2vw + 1rem);"}
+              letterSpacing={".05em"}
+              p={"0.9em 1.503em"}
               _hover={{
                 textDecoration: "none",
               }}
-              width={"190px"}
-              css={{ wordSpacing: "0.2rem" }}
-              display={{ sm: "none", md: "inline-flex" }}
+              width={"195px"}
+              display={{ base: "none", md: "inline-flex" }}
               alignItems={"center"}
               justifyContent={"center"}
               mr={2}
               data-testid="join-the-waitlist-button"
+              fontFamily={"light"}
+              onClick={() => {
+                window.location.href = "/waitlist";
+              }}
             >
               Join the waitlist
             </Button>
