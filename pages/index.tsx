@@ -360,7 +360,7 @@ export default function Home() {
 
             <Image
               src="/images/tree_right.png"
-              alt="Picture of the author"
+              alt="tropical tree"
               style={{ clipPath: "url(#round-top);" }}
               fill
               objectFit={"cover"}
@@ -489,7 +489,7 @@ export default function Home() {
           >
             <Image
               src="/images/sectionB.png"
-              alt="Picture of the author"
+              alt="woman in front of cool background"
               fill
               objectFit={"cover"}
               objectPosition={"calc(50%) calc(50%)"}
@@ -774,7 +774,7 @@ export default function Home() {
             </svg>
             <Image
               src="/images/leftLandingTree.png"
-              alt="Picture of the author"
+              alt="Tropical tree through a window"
               fill
               style={{ clipPath: "url(#round-top);" }}
               objectFit={"cover"}
