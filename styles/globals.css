@@ -112,12 +112,6 @@ a {
   object-position: 50% 0 !important;
 }
 
-/* @media screen and (min-width: 3000px) {
-  .hero-text {
-    font-size: 6rem !important;
-  }
-} */
-
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
