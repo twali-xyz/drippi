@@ -16,6 +16,7 @@ const Product = () => {
         alignItems={"center"}
         bg={"primary"}
         py={0}
+        pt={{ base: 24, md: 0 }}
         flexDir={{ base: "column", md: "row" }}
         px={{ base: "16px", md: "0px" }}
       >
