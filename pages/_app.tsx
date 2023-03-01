@@ -3,6 +3,7 @@ import type { AppProps } from "next/app";
 import { ChakraProvider } from "@chakra-ui/react";
 import { SessionProvider } from "next-auth/react";
 import { theme } from "@/styles/extendedTheme";
+import { Analytics } from '@vercel/analytics/react';
 import Script from "next/script";
 function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
   return (
@@ -28,6 +29,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
       <SessionProvider session={session}>
         <ChakraProvider theme={theme}>
           <Component {...pageProps} />
+           <Analytics />
         </ChakraProvider>
       </SessionProvider>
     </>

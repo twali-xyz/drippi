@@ -18,7 +18,7 @@ const Product = () => {
         py={0}
         pt={{ base: 24, md: 0 }}
         flexDir={{ base: "column", md: "row" }}
-        px={{ base: "16px", md: "0px" }}
+        px={{ base: "16px", md: "0px", lg: "2vw" }}
       >
         <MotionVStack
           maxW={{ base: "100%", md: "50%" }}
@@ -29,6 +29,7 @@ const Product = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
+          color={"black"}
         >
           <Box>
             <Text
@@ -48,7 +49,7 @@ const Product = () => {
                 base: "calc(1.2 * (1 + (1 - 4.5)/25))",
                 md: "calc(1.2 * (1 + (1 - 4.5)/25))",
               }}
-              maxW={"686px"}
+              maxW={{ base: "686px", lg: "45vw" }}
             >
               CREATE YOUR REALITY
             </Text>

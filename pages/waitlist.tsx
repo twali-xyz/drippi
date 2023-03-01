@@ -12,7 +12,7 @@ import {
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
-import ScrollingText from "../components/landing/scrollingText";
+
 const Waitlist = () => {
   const MotionBox = motion(Box);
   const MotionVStack = motion(VStack);
@@ -163,10 +163,12 @@ const Waitlist = () => {
           <Image
             src="/images/waitlist_1.jpeg"
             alt="Picture of the author"
-            style={{ clipPath: "url(#round-top);" }}
+            style={{
+              clipPath: "url(#round-top);",
+              objectFit: "cover",
+              objectPosition: "calc(50%) calc(50%)",
+            }}
             fill
-            objectFit={"cover"}
-            objectPosition={"calc(50%) calc(50%)"}
           />
         </MotionBox>
       </Flex>
