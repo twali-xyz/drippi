@@ -16,9 +16,9 @@ const PhotoSection = () => {
       <GridItem w="150%" h="auto" bg="blue.500">
         <Image
           src={img1}
-          alt={"demo"}
-          width={"7500"}
-          height={"7500"}
+          alt={"Creator taking photo"}
+          width={"1500"}
+          height={"1500"}
           style={{ objectFit: "cover" }}
         />
       </GridItem>
@@ -31,9 +31,9 @@ const PhotoSection = () => {
       >
         <Image
           src={img2}
-          alt={"demo"}
-          width={"750"}
-          height={"750"}
+          alt={"Woman holding a camera"}
+          width={"1000"}
+          height={"1000"}
           style={{ objectFit: "cover" }}
         />
       </GridItem>
@@ -46,9 +46,9 @@ const PhotoSection = () => {
       >
         <Image
           src={img3}
-          alt={"demo"}
-          width={"750"}
-          height={"750"}
+          alt={"Radio equipment"}
+          width={"1000"}
+          height={"1000"}
           style={{ objectFit: "cover" }}
         />
       </GridItem>
@@ -61,9 +61,9 @@ const PhotoSection = () => {
       >
         <Image
           src={img4}
-          alt={"demo"}
-          width={"750"}
-          height={"750"}
+          alt={"Woman modeling in front of red wall"}
+          width={"1000"}
+          height={"1000"}
           style={{ objectFit: "cover" }}
         />
       </GridItem>
