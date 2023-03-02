@@ -1,6 +1,10 @@
 import React from "react";
 import { Grid, GridItem } from "@chakra-ui/react";
 import Image from "next/image";
+import img1 from "../../public/images/photosection_1.jpeg";
+import img2 from "../../public/images/photosection_2.jpeg";
+import img3 from "../../public/images/photosection_3.jpeg";
+import img4 from "../../public/images/photosection_4.jpeg";
 const PhotoSection = () => {
   return (
     <Grid
@@ -11,7 +15,7 @@ const PhotoSection = () => {
     >
       <GridItem w="150%" h="auto" bg="blue.500">
         <Image
-          src={"/images/photosection_1.jpeg "}
+          src={img1}
           alt={"Creator taking photo"}
           width={"1500"}
           height={"1500"}
@@ -26,7 +30,7 @@ const PhotoSection = () => {
         bottom={"99px"}
       >
         <Image
-          src={"/images/photosection_2.jpeg "}
+          src={img2}
           alt={"Woman holding a camera"}
           width={"1000"}
           height={"1000"}
@@ -41,7 +45,7 @@ const PhotoSection = () => {
         bottom={"99px"}
       >
         <Image
-          src={"/images/photosection_3.jpeg "}
+          src={img3}
           alt={"Radio equipment"}
           width={"1000"}
           height={"1000"}
@@ -56,7 +60,7 @@ const PhotoSection = () => {
         bottom={"99px"}
       >
         <Image
-          src={"/images/photosection_4.jpeg "}
+          src={img4}
           alt={"Woman modeling in front of red wall"}
           width={"1000"}
           height={"1000"}
