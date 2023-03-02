@@ -8,11 +8,11 @@ import {
   MenuButton,
   MenuList,
   MenuItem,
-  Link,
   useDisclosure,
   Stack,
   Text,
 } from "@chakra-ui/react";
+import Link from "next/link";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
 const Links = ["Join the waitlist", "Product", "Team"];
