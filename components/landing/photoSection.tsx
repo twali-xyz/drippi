@@ -9,25 +9,31 @@ const PhotoSection = () => {
   return (
     <Grid
       templateColumns={{ base: "repeat(2, 1fr)", md: "repeat(4, 1fr)" }}
-      maxH={"25vw"}
+      maxH={{ base: "unset", md: "25vw" }}
       overflowY={"hidden"}
       gap={0}
     >
-      <GridItem w="150%" h="auto" bg="blue.500">
+      <GridItem
+        h={{ base: "200px", md: "auto" }}
+        overflow={"hidden"}
+        w="150%"
+        bg="blue.500"
+      >
         <Image
           src={img1}
           alt={"Creator taking photo"}
           width={"1500"}
           height={"1500"}
-          style={{ objectFit: "cover" }}
+          style={{ objectFit: "cover", height: "inherit" }}
         />
       </GridItem>
       <GridItem
+        h={{ base: "200px", md: "auto" }}
+        overflow={"hidden"}
         w="100%"
-        h="auto"
         bg="blue.500"
         pos={"relative"}
-        bottom={"99px"}
+        bottom={{ base: "unset", md: "99px" }}
       >
         <Image
           src={img2}
@@ -38,11 +44,12 @@ const PhotoSection = () => {
         />
       </GridItem>
       <GridItem
+        h={{ base: "200px", md: "auto" }}
+        overflow={"hidden"}
         w="100%"
-        h="auto"
         bg="blue.500"
         pos={"relative"}
-        bottom={"99px"}
+        bottom={{ base: "unset", md: "99px" }}
       >
         <Image
           src={img3}
@@ -53,11 +60,12 @@ const PhotoSection = () => {
         />
       </GridItem>
       <GridItem
+        h={{ base: "200px", md: "auto" }}
+        overflow={"hidden"}
         w="100%"
-        h="auto"
         bg="blue.500"
         pos={"relative"}
-        bottom={"99px"}
+        bottom={{ base: "unset", md: "99px" }}
       >
         <Image
           src={img4}

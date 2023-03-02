@@ -113,6 +113,7 @@ const Product = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
           px={"0px"}
+          mx={{ base: "auto", md: "0" }}
           mr={"calc(12vw * .85)"}
           mt={{ base: 4, md: "calc(5vw * .85)" }}
           width={"100%"}
