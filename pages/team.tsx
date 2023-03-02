@@ -35,12 +35,20 @@ export default function Team() {
           <VStack px={4}>
             <Box borderRadius={"full"} overflow={"hidden"}>
               <Avatar
+                icon={
+                  <Image
+                    alt="cokie"
+                    src="/images/cokie.jpeg"
+                    width={210}
+                    height={210}
+                    style={{ alignSelf: "flex-start" }}
+                  />
+                }
                 mb={1}
                 className={"team-photo"}
-                src="/images/cokie.jpeg"
-                style={{ objectPosition: "50% 0% !important" }}
                 width={210}
                 height={210}
+                style={{ alignSelf: "flex-start" }}
               />
             </Box>
             <Text
@@ -71,10 +79,9 @@ export default function Team() {
           <VStack px={4}>
             <Box borderRadius={"full"} overflow={"hidden"}>
               <Avatar
+                src="/images/nick.jpeg"
                 mb={1}
                 className={"team-photo"}
-                src="/images/nick.jpeg"
-                style={{ objectPosition: "50% 0% !important" }}
                 width={210}
                 height={210}
               />
@@ -107,10 +114,17 @@ export default function Team() {
           <VStack px={4}>
             <Box borderRadius={"full"} overflow={"hidden"}>
               <Avatar
+                icon={
+                  <Image
+                    alt="casey"
+                    src="/images/casey.jpeg"
+                    width={210}
+                    height={210}
+                    style={{ alignSelf: "flex-start" }}
+                  />
+                }
                 mb={1}
                 className={"team-photo"}
-                src="/images/casey.jpeg"
-                style={{ objectPosition: "50% 0% !important" }}
                 width={210}
                 height={210}
               />
@@ -143,10 +157,17 @@ export default function Team() {
           <VStack px={4}>
             <Box borderRadius={"full"} overflow={"hidden"}>
               <Avatar
+                icon={
+                  <Image
+                    alt="ivy"
+                    src="/images/ivy.jpeg"
+                    width={210}
+                    height={210}
+                    style={{ alignSelf: "flex-start" }}
+                  />
+                }
                 mb={1}
                 className={"team-photo"}
-                src="/images/ivy.jpeg"
-                style={{ objectPosition: "50% 0% !important" }}
                 width={210}
                 height={210}
               />
@@ -179,10 +200,17 @@ export default function Team() {
           <VStack px={4}>
             <Box borderRadius={"full"} overflow={"hidden"}>
               <Avatar
+                icon={
+                  <Image
+                    alt="hone"
+                    src="/images/hone.jpeg"
+                    width={210}
+                    height={210}
+                    style={{ alignSelf: "flex-start" }}
+                  />
+                }
                 mb={1}
                 className={"team-photo"}
-                src="/images/hone.jpeg"
-                style={{ objectPosition: "50% 0% !important" }}
                 width={210}
                 height={210}
               />
