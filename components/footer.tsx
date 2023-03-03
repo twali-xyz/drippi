@@ -47,7 +47,7 @@ const Footer = () => {
             textDecor={"underline"}
             fontWeight={"300"}
             as={"a"}
-            href={"mailto:support@drippi.com"}
+            href={"mailto:hello@drippi.com"}
           >
             Email us
           </Button>
