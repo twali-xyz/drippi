@@ -108,6 +108,10 @@ a {
   font-size: 1.5rem;
 }
 
+.team-photo > img {
+  object-position: 50% 0 !important;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
