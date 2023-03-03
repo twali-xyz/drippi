@@ -1,7 +1,9 @@
 import { Flex, Button, VStack, Text } from "@chakra-ui/react";
+import { useRouter } from "next/router";
 import React from "react";
 
 const Footer = () => {
+  const router = useRouter();
   return (
     <VStack
       as={"footer"}
@@ -30,6 +32,9 @@ const Footer = () => {
             color={"black"}
             textDecor={"underline"}
             fontWeight={"300"}
+            onClick={() => {
+              router.push("/team");
+            }}
           >
             About us
           </Button>
@@ -41,6 +46,8 @@ const Footer = () => {
             color={"black"}
             textDecor={"underline"}
             fontWeight={"300"}
+            as={"a"}
+            href={"mailto:hello@drippi.com"}
           >
             Email us
           </Button>
@@ -76,19 +83,11 @@ const Footer = () => {
             color={"black"}
             textDecor={"underline"}
             fontWeight={"300"}
+            onClick={() => {
+              router.push("/product");
+            }}
           >
             How it works
-          </Button>
-          <Button
-            textUnderlineOffset={"2.5px"}
-            fontSize={"calc((.8 - 1) * 1.2vw + 1rem)"}
-            py={"4px"}
-            variant={"link"}
-            color={"black"}
-            textDecor={"underline"}
-            fontWeight={"300"}
-          >
-            Take our survey for a shot to win $500
           </Button>
         </VStack>
       </Flex>

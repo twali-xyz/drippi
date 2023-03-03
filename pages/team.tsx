@@ -79,7 +79,15 @@ export default function Team() {
           <VStack px={4}>
             <Box borderRadius={"full"} overflow={"hidden"}>
               <Avatar
-                src="/images/nick.jpeg"
+                icon={
+                  <Image
+                    alt="nick"
+                    src="/images/nick.jpeg"
+                    width={210}
+                    height={210}
+                    style={{ alignSelf: "flex-start" }}
+                  />
+                }
                 mb={1}
                 className={"team-photo"}
                 width={210}
