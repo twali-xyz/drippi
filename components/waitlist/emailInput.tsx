@@ -3,20 +3,29 @@ import {
   Button,
   Flex,
   FormControl,
+  FormErrorMessage,
   FormLabel,
   Input,
   Text,
   useToast,
 } from "@chakra-ui/react";
 import React from "react";
+import Z from "zod";
+
 export function EmailInput() {
   const [email, setEmail] = React.useState<string>("");
+  const [emailError, setEmailError] = React.useState<string>("");
   const toast = useToast();
+
+  const emailSchema = Z.string().email();
+  const result = emailSchema.safeParse(email);
+
   return (
     <>
       {" "}
       <FormControl
         isRequired
+        isInvalid={emailError !== ""}
         css={{
           textAlignLast: "left",
         }}
@@ -41,6 +50,7 @@ export function EmailInput() {
             setEmail(e.target.value);
           }}
         />
+        <FormErrorMessage>{emailError}</FormErrorMessage>
       </FormControl>
       <Flex
         width={"100%"}
@@ -77,6 +87,11 @@ export function EmailInput() {
           fontFamily={"light"}
           data-testid="join-the-waitlist-button"
           onClick={async () => {
+            if (!result.success) {
+              setEmailError(result.error.issues[0]?.message);
+              return;
+            }
+            setEmailError("");
             const res = await handleJoinWaitlist(email);
             if (res.status === 200) {
               toast({
