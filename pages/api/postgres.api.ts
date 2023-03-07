@@ -12,6 +12,10 @@ const pool = new Pool({
   database: process.env.DB_NAME,
   password: process.env.DB_PASSWORD,
   port: Number(process.env.DB_PORT),
+  ssl: {
+    rejectUnauthorized: false,
+    // Add any other SSL configuration options here
+  }
 });
 
 export default async function handler(
