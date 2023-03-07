@@ -32,6 +32,7 @@ export function EmailInput() {
         <Input
           type={"email"}
           background={"#ffffff"}
+          color={"black"}
           width={"100%"}
           maxW={"570px"}
           alignSelf={"flex-start"}
