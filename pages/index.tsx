@@ -12,20 +12,20 @@ import {
   AccordionButton,
   AccordionPanel,
   AccordionIcon,
-  FormControl,
-  FormLabel,
-  Input,
 } from "@chakra-ui/react";
 import PhotoSection from "@/components/landing/photoSection";
 import ScrollingText from "@/components/landing/scrollingText";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { EmailInput } from "@/components/waitlist/emailInput";
+import { useRouter } from "next/router";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const MotionBox = motion(Box);
   const MotionVStack = motion(VStack);
+  const router = useRouter();
 
   return (
     <>
@@ -361,7 +361,7 @@ export default function Home() {
             <Image
               src="/images/tree_right.png"
               alt="tropical tree"
-              style={{ clipPath: "url(#round-top);" }}
+              style={{ clipPath: "url(#round-top)" }}
               fill
               objectFit={"cover"}
               objectPosition={"calc(50%) calc(50%)"}
@@ -473,6 +473,9 @@ export default function Home() {
               justifySelf={"flex-end"}
               pos={"relative"}
               top={"70px"}
+              onClick={() => {
+                router.push("product");
+              }}
             >
               How it works →
             </Button>
@@ -700,54 +703,7 @@ export default function Home() {
                 </Text>
               </Flex>
             </Flex>
-            <FormControl
-              isRequired
-              css={{ textAlignLast: "left" }}
-              pt={4}
-              pr={4}
-            >
-              <FormLabel
-                fontWeight={"light"}
-                fontSize={"sm"}
-                color={"#ffffff"}
-                requiredIndicator={<Text> Email *</Text>}
-              ></FormLabel>
-              <Input
-                type={"email"}
-                background={"#ffffff"}
-                width={"100%"}
-                maxW={"570px"}
-              />
-            </FormControl>
-            <Button
-              background={"primary"}
-              rounded={"full"}
-              fontWeight={"400"}
-              fontSize={"sm"}
-              letterSpacing={"0.05em"}
-              _hover={{
-                textDecoration: "none",
-              }}
-              height={{ base: "52px", md: "52px" }}
-              css={{
-                wordSpacing: "0.2rem",
-              }}
-              display={{
-                md: "inline-flex",
-              }}
-              alignItems={"center"}
-              justifyContent={"center"}
-              mt={{ base: 0, md: "24px !important" }}
-              zIndex={1}
-              p={".9em 1.503em"}
-              fontFamily={"light"}
-              data-testid="join-the-waitlist-button"
-              alignSelf={{ base: "flex-start", md: "flex-start" }}
-              justifySelf={"flex-end"}
-              color={"black"}
-            >
-              Sign Up
-            </Button>
+            <EmailInput />
           </VStack>
           <Box
             px={"0px"}
@@ -776,7 +732,7 @@ export default function Home() {
               src="/images/leftLandingTree.png"
               alt="Tropical tree through a window"
               fill
-              style={{ clipPath: "url(#round-top);" }}
+              style={{ clipPath: "url(#round-top)" }}
               objectFit={"cover"}
               objectPosition={"calc(27.5%) calc(45%)"}
             />
@@ -808,6 +764,9 @@ export default function Home() {
             width={"337px"}
             borderRadius={"full"}
             fontSize={"1rem"}
+            onClick={() => {
+              router.push("/waitlist");
+            }}
           >
             Sign Up →
           </Button>
