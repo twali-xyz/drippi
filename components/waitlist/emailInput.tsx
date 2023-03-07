@@ -50,7 +50,7 @@ export function EmailInput() {
             setEmail(e.target.value);
           }}
         />
-        <FormErrorMessage>{emailError}</FormErrorMessage>
+        <FormErrorMessage color={"primary"}>{emailError}</FormErrorMessage>
       </FormControl>
       <Flex
         width={"100%"}
