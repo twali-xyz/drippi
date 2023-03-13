@@ -35,7 +35,9 @@ export default function Notification({
         textDecoration: "none",
       }}
     >
-      <Text>{notification.title}</Text>
+      <Text color={"black"} opacity={"0.8"}>
+        {notification.title}
+      </Text>
       <Icon color={"secondary"}>{icon}</Icon>
     </Button>
   );
