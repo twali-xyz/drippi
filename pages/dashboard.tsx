@@ -33,7 +33,7 @@ export default function Dashboard() {
           <Text
             fontFamily={"normal"}
             lineHeight={"64px"}
-            fontSize={"48px"}
+            fontSize={"calc((2.7 - 1) * 1.2vw + 1rem)"}
             fontWeight={500}
           >
             Hello, {session?.user?.name}!

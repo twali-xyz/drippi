@@ -35,7 +35,11 @@ export default function Notification({
         textDecoration: "none",
       }}
     >
-      <Text color={"black"} opacity={"0.8"}>
+      <Text
+        color={"black"}
+        opacity={"0.8"}
+        fontSize={"calc((1.5 - 1) * 1.2vw + 1rem)"}
+      >
         {notification.title}
       </Text>
       <Icon color={"secondary"}>{icon}</Icon>
